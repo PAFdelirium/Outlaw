@@ -1,3 +1,0 @@
- 1 Bewege dich in Richtung des Mittelpunkts derer, die du in deinem Umfeld siehst (Kohäsion).
- 2 Bewege dich weg, sobald dir jemand zu nahe kommt (Separation).
- 3 Bewege dich in etwa in dieselbe Richtung wie deine Nachbarn (Alignment).
