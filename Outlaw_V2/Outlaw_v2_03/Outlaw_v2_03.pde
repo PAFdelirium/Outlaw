@@ -20,8 +20,8 @@ void setup() {
   boids = new ArrayList();
   for (int i = 0; i < botCount; i++) {
     angle += circleAngle;
-    float radius = 3;
-    boids.add(new Boid(new PVector(canvas.pg.width/2 + sin(angle)*200, canvas.pg.height/2 + cos(angle)*200), 0.5, radius, 0.01, 2, radius*10, radius*4));
+    float radius = 5;
+    boids.add(new Boid(new PVector(canvas.pg.width/2 + sin(angle)*200, canvas.pg.height/2 + cos(angle)*200), 0.5, radius, 0.01, 2, radius*random(7, 10), radius*4));
   }
 }
 

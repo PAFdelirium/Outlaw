@@ -30,7 +30,7 @@ class Boid extends Mover{
   float neighbordist;          // represents the viewing distance of one boid  
   float desiredSeperation = 0; // represents the desired seperation distance of one boid
   
-  float alignmentWeight  = 2.0f;
+  float alignmentWeight  = 1.0f;
   float seperationWeight = 2.5f;
   float cohesionWeight   = 1.0f;
   float seekWeight       = 2.0;
@@ -75,7 +75,7 @@ class Boid extends Mover{
     PVector sep = seperate(_boids); // Seperation
     PVector ali = align   (_boids); // Alignment
     PVector coh = cohesion(_boids); // Cohesion
-    PVector seek = seek(new PVector(l.getX()+v.getX()+random(-0.7, 0.7),l.getY()+v.getY()+random(-0.7, 0.7))); // Mouseposition has to be translated
+    PVector seek = seek(new PVector(l.getX()+v.getX()+random(-0.2, 0.2),l.getY()+v.getY()+random(-0.2, 0.2))); // Mouseposition has to be translated
     
     // Arbitarily weight these forces
     sep.mult(seperationWeight);
